@@ -1,0 +1,69 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bar Cookbook</title>  
+  <link rel="manifest" href="/manifest.json">
+  <meta name="copyright" content="© Vy Radionov.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link href="./styles/fonts.min.css" rel="stylesheet">
+  <link href="./styles/main.css" rel="stylesheet">
+  <link href="./styles/cards.css" rel="stylesheet">
+  <link href="./styles/btns.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1><i class="neon neon-red">No liquor</i></h1>
+    <h2><i class="neon neon-blue">cookbook</i></h2>
+  </header>
+  <main>
+    <aside>
+      <div>
+        <button class="btn-change-type" disabled data-rel="cocktails">
+          <span class="icon-asset material-symbols-outlined" style="font-size: 24px;"><span>local_bar</span></span>
+        </button>
+        <button class="btn-change-type" data-rel="liquors">
+          <span class="icon-asset material-symbols-outlined" style="font-size: 24px;"><span>liquor</span></span>
+        </button>
+        <button class="btn-change-type" data-rel="complexIngridients">
+          <span class="icon-asset material-symbols-outlined" style="font-size: 24px;"><span>local_drink</span></span>
+        </button>
+      </div>
+      <div id="tagContainer-basedOn"></div> 
+    </aside>
+    <div class="cards" id="cardsContainer"></div>
+    <aside>
+      <button id="btn-without-disabled" disabled>
+        <span class="icon-asset material-symbols-outlined" style="font-size: 24px;"><span>no_drinks</span></span>
+        Without
+      </button>
+      <button id="btn-show-based-on" for="#tagContainer-basedOn">
+        <span class="icon-asset material-symbols-outlined" style="font-size: 24px;"><span>tapas</span></span>
+        Based on
+      </button>
+      <button id="btn-without-enabled" for="#tagContainer-without">
+        <span class="icon-asset material-symbols-outlined" style="font-size: 24px;"><span>no_drinks</span></span>
+        Without
+      </button>
+      <div id="tagContainer-without"></div> 
+    </aside>
+  </main>
+  <dialog id="dialog">
+    <div id="dialog-container"></div>
+    <button id="dialog-close">
+      <span class="icon-asset material-symbols-outlined" style="font-size: 24px;"><span>close</span></span>
+      Close
+    </button>
+  </dialog>
+</body>
+<script src="./js/jquery.js"></script>
+<script src="./js/main.js"></script>
+
+</html>
