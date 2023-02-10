@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Bar Cookbook</title>
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="./manifest.json">
   <meta name="description" content="Home made bar cookbook. For friends. For me.">
   <meta name="copyright" content="© Vy Radionov.">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -68,13 +68,13 @@
     </button>
   </dialog>
 </body>
-<script src="/js/jquery.js"></script>
-<script src="/js/main.min.js"></script>
+<script src="./js/jquery.js"></script>
+<script src="./js/main.min.js"></script>
 <script>
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function() {
     navigator.serviceWorker
-      .register("/worker.js")
+      .register("./worker.js")
       .then(res => console.log("service worker registered"))
       .catch(err => console.log("service worker not registered", err))
   })
