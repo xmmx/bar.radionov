@@ -265,7 +265,7 @@ $(function () {
   };
 
   // Load data and diplay default state
-  $.getJSON('/data/data.json', (d) => {
+  $.getJSON('./data/data.json', (d) => {
     data = d;
     allIngridients = {
       ...data["ingridients"],
