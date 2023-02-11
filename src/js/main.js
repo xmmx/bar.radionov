@@ -129,7 +129,7 @@ $(function () {
 
     const $cardFront = $('<div class="card-front">');
     const $cardBack = $('<div class="card-back">');
-    const imgUrl = cardObject.img ? `/img/${title.toLowerCase().replace(/\s/g,'_')}.jpg` : 'https://via.placeholder.com/450';
+    const imgUrl = cardObject.img ? `./img/${title.toLowerCase().replace(/\s/g,'_')}.jpg` : 'https://via.placeholder.com/450';
     $cardFront
       .append($('<div>').append(badges))
       .append($('<br/>'))
