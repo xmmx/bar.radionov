@@ -84,7 +84,7 @@ $(function () {
       .filter((i, item) => {
         return !filterOptions[ignoreFilter].includes($(item).text())
       })
-      .sort((a, b) => $(b).text > $(a).text());
+      .sort((a, b) => $(b).text() < $(a).text());
     $target.html('').append(children);
   };
 
