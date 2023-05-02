@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Bar Cookbook</title>
-  <link rel="manifest" href="./manifest.json">
+  <!-- <link rel="manifest" href="/manifest.json"> -->
   <meta name="description" content="Home made bar cookbook. For friends. For me.">
   <meta name="copyright" content="© Vy Radionov.">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,11 +16,11 @@
   <!-- CSS -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"></noscript>
-  <link rel="preload" href="./styles/fonts.min.css?v1" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="./styles/fonts.min.css?v1"></noscript>
-  <link href="./styles/cards.min.css?v1" rel="stylesheet">
-  <link href="./styles/btns.min.css?v1" rel="stylesheet">
-  <link href="./styles/main.min.css?v1" rel="stylesheet">
+  <link rel="preload" href="/styles/fonts.min.css?v1" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/styles/fonts.min.css?v1"></noscript>
+  <link href="/styles/cards.min.css?v1" rel="stylesheet">
+  <link href="/styles/btns.min.css?v1" rel="stylesheet">
+  <link href="/styles/main.min.css?v1" rel="stylesheet">
 </head>
 
 <body>
@@ -68,16 +68,6 @@
     </button>
   </dialog>
 </body>
-<script src="./js/jquery.js"></script>
-<script src="./js/main.min.js"></script>
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", function() {
-    navigator.serviceWorker
-      .register("./worker.js")
-      .then(res => console.log("service worker registered"))
-      .catch(err => console.log("service worker not registered", err))
-  })
-}
-</script>
+<script src="/js/jquery.js"></script>
+<script src="/js/main.min.js"></script>
 </html>
