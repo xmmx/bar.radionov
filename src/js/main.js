@@ -266,7 +266,7 @@ $(function () {
 
   // Load data and diplay default state
   $.getJSON('/data/data.json', (d) => {
-    if (!d) return ;
+    if (!d) return alert('Data is missing!');
     data = d;
     allIngridients = {
       ...data["ingridients"],

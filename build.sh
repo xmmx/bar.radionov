@@ -15,7 +15,8 @@ echo "Minify css..."
 npx css-minify -d src/styles/ -o static/styles
 
 echo "Minify js..."
-npx minify src/js/main.js > static/js/main.min.js
+#npx minify src/js/main.js > static/js/main.min.js
+cp src/js/main.js static/js/main.min.js
 
 echo "Collect assets for PWA..."
 ./collect_assets.js
