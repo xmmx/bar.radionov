@@ -66,6 +66,8 @@
 }
 .card.flipped .card-inner {
   transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
 }
 
 .card-front, .card-back {
